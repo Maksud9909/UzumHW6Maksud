@@ -35,6 +35,10 @@ package org.example.Homework6_2;
  */
 public class Homework6_2 {
     public int longestMonotonicSubarray(int[] nums) {
+
+        if (nums.length == 0){
+            throw new IllegalArgumentException();
+        }
         int maxLength = 1;
         int currentLength = 1;
         for (int i = 1; i < nums.length; i++) {
